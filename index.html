@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>HTML5</title>
-<meta charset="utf-8">
-<style>
-body {
-  font-family: Verdana, sans-serif;
-  font-size: 0.8em;
-}
+  <title>HTML5</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      font-size: 0.8em;
+    }
 
-header, nav, section, article, footer {
-  border: 1px solid grey;
-  margin: 5px;
-  padding: 8px;
-}
+    header,
+    nav,
+    section,
+    article,
+    footer {
+      border: 1px solid grey;
+      margin: 5px;
+      padding: 8px;
+    }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-}
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
 
-nav ul li {
-  display: inline;
-  margin: 5px;
-}
-</style>
+    nav ul li {
+      display: inline;
+      margin: 5px;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Matt Lim's Test Landing</h1>
-</header>
+  <header>
+    <h1>Matt Lim's Test Landing</h1>
+  </header>
 
-<nav>
-  <ul>
-    <li>Content Explorer Lite</li>
-    <li>Soon</li>
-    <li>TM</li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li>Content Explorer Lite</li>
+      <li>Soon</li>
+      <li>TM</li>
+    </ul>
+  </nav>
 
-<article>
-  <h2>Box Content Explorer</h2>
-  <body>
-    <div class="container"></div>
-  </body>
-</article>
+  <article>
+    <h2>Box Content Explorer</h2>
 
-<footer>
-  <p>&copy; Matt Lim Productions</p>
-</footer>
+    <body>
+      <form>
+        Folder ID:<br>
+        <input type="text" name="folder_id"><br>
+        Access Token:<br>
+        <input type="text" name="access_token"><br>
+        Access Requested:<br>
+        <select name="access_level">
+          <option value="item_read">Read Only</option>
+          <option value="item_readwrite">Read and Write</option>
+          <option value="item_preview">Preview</option>
+          <option value="item_upload">Upload</option>
+          <option value="item_share">Share</option>
+          <option value="item_delete">Delete</option>
+          <option value="item_download">Download</option>
+        </select>
+        <input type="radio" name="gender" value="other"> Other
+      </form>
+      <div class="container"></div>
+    </body>
+  </article>
+
+  <footer>
+    <p>&copy; Matt Lim Productions</p>
+  </footer>
 
 </body>
+
 </html>
