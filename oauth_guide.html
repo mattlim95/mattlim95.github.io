@@ -27,7 +27,9 @@
   <main>
     <section>
       <h2>Guide to setting up Postman with OAuth 2.0 Tokens</h2>
-        <form action="" method="">
+        <form onsubmit="getAuth()">
+          EID<br>
+          <input type="text" name="eid" required><br>
           Client ID:<br>
           <input type="text" name="client_id" required><br>
           Client Secret:<br>
@@ -35,11 +37,8 @@
           <button>Submit Authentication Request</button>
         </form>
     </section>
-    <div>
-      <!-- IFrame for Get Authentication call-->
-
-    </div>
-
+    <div class='container'> </div>
+    <script src="scripts/index.js"></script>
   </main>
 </body>
 
